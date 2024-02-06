@@ -16,6 +16,7 @@ var arr = [
     }
 ];
 
-var validEmails = arr.filter(obj => /^[a-z0-9]+\.[a-z0-9]+@(gmail|yahoo)\.com$/.test(obj.email));
+var validEmails = arr.filter(obj => /^[a-z0-9]+\.[a-z0-9]+@(gmail|yahoo)\.com$/.test(obj.email))
+.map(obj => obj.email);
 
 console.log(validEmails);
